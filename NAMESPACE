@@ -2,6 +2,7 @@
 
 export(Mawdist)
 export(centroid_sphBregman_GMM)
+export(newMawdist)
 export(opt)
 import(lpSolve)
 importFrom(Matrix,Schur)
