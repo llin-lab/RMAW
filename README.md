@@ -20,7 +20,7 @@ Please refer to the github page to download and install Rmosek package before in
 if (!require("devtools", quietly = TRUE))
   install.packages("devtools")
 
-devtools::install_github('zhangjx1996/RMAW')
+devtools::install_github('llin-lab/RMAW')
 ```
 
 # Updates
