@@ -179,7 +179,9 @@ ot <- function(cost,p1,p2) {
 
   prob$iparam <- list(OPTIMIZER = "OPTIMIZER_INTPNT", LOG = 0)
   prob$sense <- "minimize"
-  r <- opt(prob$c, prob$A, blc, buc, blx, ulx, list(soldetail=1))
+  # unused argument list(soldetail=1) - does not align with opt.R inputs
+  # r <- opt(prob$c, prob$A, blc, buc, blx, ulx, list(soldetail=1))
+  r <- opt(prob$c, prob$A, blc, buc, blx, ulx)
 
   # To extract the optimized objective function value
   objval <- r$obj_val
